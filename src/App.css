@@ -1,13 +1,16 @@
 
-
 .to-do-Box {
   width: 400px;
   text-align: center;
   margin-left: 475px;
+  border: 2px solid black;
+  border-radius: 2%;
+  background-color: bisque;
 }
 
 .list {
   text-align: center;
+
 }
 
 

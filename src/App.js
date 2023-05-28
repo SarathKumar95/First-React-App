@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
+import InputGroup from 'react-bootstrap/InputGroup';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Task} from './Task'
 
@@ -46,11 +47,11 @@ function App() {
   return (
     <div className="App mt-4">
     <React.Fragment>  
-    <div className="to-do-Box bg-success">
-      <h1 className="text-white" style={{textDecoration:'underline'}}>To Do List</h1>
+    <div className="to-do-Box">
+      <h1 className="text-dark" style={{textDecoration:'underline'}}>To Do List</h1>
       <div className="AddTask">
-        <input onChange={handleChange} className="m-1"/>
-        <button onClick={addTask}>Add Task</button>
+        <input onChange={handleChange} className="m-1 input" placeholder="What's the task today ?"/>
+        <button onClick={addTask} className="btn btn-sm btn-primary text-white mb-1">Add Task</button>
       </div>
       <div className="list">
         {todolist.map((task) => {
